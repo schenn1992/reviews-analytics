@@ -7,4 +7,10 @@ with open('reviews.txt', 'r') as f:
 		count += 1
 		if count % 1000 == 0:
 			print(len(data))
-print(len(data))
+print('Finish loading files, there are', len(data), 'files in total.')
+
+sum_len = 0
+for d in data:
+	sum_len += len(d)
+
+print ('The average length of comment is', sum_len/len(data))
