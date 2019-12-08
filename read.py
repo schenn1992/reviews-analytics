@@ -19,6 +19,11 @@ new_data = []
 for d in data:
 	if len(d) < 100:
 		new_data.append(d)
-print('There are', len(new_data), 'comments shorter than 100')
+print('There are', len(new_data), 'comments shorter than 100.')
 
 
+list_good = []
+for d in data:
+	if 'good' in d:
+		list_good.append(d)
+print("There are", len(list_good),"comments mentioned the word 'good'.")
