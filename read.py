@@ -13,4 +13,12 @@ sum_len = 0
 for d in data:
 	sum_len += len(d)
 
-print ('The average length of comment is', sum_len/len(data))
+print ('The average length of a comment is', sum_len/len(data))
+
+new_data = []
+for d in data:
+	if len(d) < 100:
+		new_data.append(d)
+print('There are', len(new_data), 'comments shorter than 100')
+
+
